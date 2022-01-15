@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./index.js"></script>
+    <title>Practice English.</title>
+    <style>
+        body {
+            margin:0 auto;
+            text-align:center;
+            width:1200px;
+            font-family: sans-serif;
+            font-weight: 100;
+            padding:10px;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            font-size:50px;
+        }
+
+        .questionBox {
+            width:100%;
+            color:#fff;
+        }
+        .answer {
+            width:100%;
+        }
+        .answer input {
+            width: 80%;
+            font-size: 40px;
+            padding:5px;
+            border-top: none;
+            border-left:none;
+            border-right:none;
+        }
+        .answer input:focus {
+            outline: none;
+        }
+        button {
+            margin:10px;
+            font-size:30px;
+            border-style:none;
+            padding:10px;
+        }
+        button:hover {
+            cursor: pointer;
+        }
+        .score_board {
+            display:flex;
+            
+        }
+        .score_board > div {
+            flex:1;
+            flex-direction: row;
+        }
+        .correct {
+            color: green;
+        }
+        .wrong { 
+            color:red;
+        }
+
+           
+    </style>
+</head>
+<body>
+    <div class="questionBox">
+        <label>Develop by jingjo</label>
+        <div class="question">
+            <h1 id="sen_thai">คำถาม</h1>
+        </div>
+        <div class="answer">
+            <input type="text" id="answer">
+        </div>
+        <button id="btn_Send">Send</button>
+        <button id="btn_SoundAns">Sound Question</button>
+        <button id="btn_Sound">Sound Answer</button>
+    </div>
+    <div>
+        <h1>Score</h1>
+        <div class="score_board">
+            <div class="correct">
+                <h3>Correct</h3>
+                <h1 id="score_correct">0</h1>
+            </div>
+            <div class="wrong">
+                <h3>Wrong</h3>
+                <h1 id="score_wrong">0</h1>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
